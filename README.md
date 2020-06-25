@@ -8,10 +8,10 @@
 - Create a django project.
 	
 	
-- Pull this repository into your django project in the same directory where manage.py file is.
+- Pull this repository into your django project in the same directory where `manage.py` file is.
 	
 	
-- Add this app into your settings.py file's INSTALLED_APPS section
+- Add this app into your `settings.py` file's `INSTALLED_APPS` section
 ```
 	INSTALLED_APPS = [
     		'django.contrib.admin',
@@ -24,7 +24,7 @@
 	]
 ```
 	
-- All the following code into your project's settings.py file
+- Add the following code into your project's `settings.py` file
 ```
 	TEMPLATE_DIR = os.path.join(BASE_DIR, 'templates')
 	STATIC_DIR = os.path.join(BASE_DIR, 'static')
@@ -34,7 +34,7 @@
 	MEDIA_URL = '/media/'
 
 
-	LOGIN_URL = 'knowme/user_login'
+	LOGIN_URL = 'users/user_login'
 
 	AUTH_USER_MODEL = 'users.Account'
 ```
